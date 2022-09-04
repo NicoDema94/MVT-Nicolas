@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    Miembros de la familia:
+    <br><th>Nombre</th>   <th>Edad</th>   <th>Nacimiento</th>
+    {% for miembro in miembros%}
+    <p>{{miembro.nombre}} {{miembro.age}} {{miembro.nacimiento}}</p>
+    {% endfor %}
 </body>
 </html>
